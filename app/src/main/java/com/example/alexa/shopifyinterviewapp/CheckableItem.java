@@ -2,10 +2,13 @@ package com.example.alexa.shopifyinterviewapp;
 
 /**
  * Created by alexa on 6/7/2017.
+ *
+ * Holder for values for each list item
  */
 
 class CheckableItem {
-    private String text;
+
+    private final String text;
     private boolean checked;
 
     CheckableItem(String item) {

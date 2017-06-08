@@ -10,7 +10,7 @@
     tools:context="com.example.alexa.shopifyinterviewapp.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+    <com.example.alexa.shopifyinterviewapp.ListHeader
         android:id="@+id/coffee"
         layout="@layout/list_group"
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         app:title="Coffee"
         app:subtitle="Grab and go!"/>
 
-    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+    <com.example.alexa.shopifyinterviewapp.ListHeader
         android:id="@+id/sweet"
         layout="@layout/list_group"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         app:title="Sweets"
         app:subtitle="Good for your teeth"/>
 
-    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+    <com.example.alexa.shopifyinterviewapp.ListHeader
         android:id="@+id/food"
         layout="@layout/list_group"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         app:subtitle="Hungry?"/>
 
 
-    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+    <com.example.alexa.shopifyinterviewapp.ListHeader
         android:id="@+id/drink"
         layout="@layout/list_group"
         android:layout_width="match_parent"

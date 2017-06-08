@@ -15,27 +15,36 @@ import java.util.ArrayList;
 
 /**
  * Created by alexa on 6/5/2017.
+ *
+ * The header section of the expendable view
  */
 
-public class ContentAdapter extends RelativeLayout {
+public class ListHeader extends RelativeLayout {
 
-    View rootView;
-    TextView title;
-    TextView subtitle;
-    Boolean listOpen;
-    ArrayList<CheckableItem> checkableItems;
-    ArrayList<ListItem> listItems;
-    LinearLayout layout;
+    private View rootView;
+    private TextView title;
+    private TextView subtitle;
+    private Boolean listOpen;
+    private ArrayList<CheckableItem> checkableItems;
+    private ArrayList<ListItem> listItems;
+    private LinearLayout layout;
 
-    public ContentAdapter(Context context) {
+    /**
+     * Constructors
+    * */
+
+    public ListHeader(Context context) {
         super(context);
     }
 
-    public ContentAdapter(Context context, AttributeSet attributeSet) {
+    public ListHeader(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         init(context, attributeSet);
     }
 
+    /**
+     * Initialization of all fields
+     * */
     private void init(Context context, AttributeSet attributeSet) {
 
         rootView = inflate(context, R.layout.list_group, this);
@@ -43,14 +52,17 @@ public class ContentAdapter extends RelativeLayout {
         subtitle = (TextView) rootView.findViewById(R.id.subtitle);
         listOpen = false;
 
-        TypedArray ta = context.getTheme().obtainStyledAttributes(attributeSet, R.styleable.ContentAdapter, 0, 0);
-        title.setText(ta.getString(R.styleable.ContentAdapter_title));
-        subtitle.setText(ta.getString(R.styleable.ContentAdapter_subtitle));
+        TypedArray ta = context.getTheme().obtainStyledAttributes(attributeSet, R.styleable.ListHeader, 0, 0);
+        title.setText(ta.getString(R.styleable.ListHeader_title));
+        subtitle.setText(ta.getString(R.styleable.ListHeader_subtitle));
         layout = (LinearLayout) findViewById(R.id.item_layout);
         checkableItems = new ArrayList<>();
         listItems = new ArrayList<>();
     }
 
+    //==============
+     //General utility classes
+    //================
     public boolean isListOpen() {
         return listOpen;
     }
@@ -66,9 +78,13 @@ public class ContentAdapter extends RelativeLayout {
         return null;
     }
 
-    public void setCheckableItems(ArrayList<CheckableItem> items) {
+    private void setCheckableItems(ArrayList<CheckableItem> items) {
         this.checkableItems = items;
     }
+
+    /**
+     * @param items: the items which should be inserted into the list
+     */
 
     public void setListAdapter(ArrayList<CheckableItem> items) {
         if (checkableItems.size() < 1) {
@@ -85,6 +101,10 @@ public class ContentAdapter extends RelativeLayout {
         listOpen = true;
     }
 
+    /**
+     * Closes the list, gets rid of everything
+     */
+
     public void removeListAdapter() {
         if (checkableItems != null && isListOpen()) {
             for (CheckableItem item : checkableItems) {
@@ -95,7 +115,11 @@ public class ContentAdapter extends RelativeLayout {
         listOpen = false;
     }
 
-    public void expand(final View v) {
+    /**
+     * Animates the expansion of the list, adjusting the size of the container
+     * @param v: view to expand
+     */
+    private void expand(final View v) {
         v.measure(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         final int targetHeight = v.getMeasuredHeight();
 
