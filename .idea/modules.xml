@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ShopifyInterviewApp.iml" filepath="$PROJECT_DIR$/ShopifyInterviewApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coffeeShopInterface.iml" filepath="$PROJECT_DIR$/coffeeShopInterface.iml" />
     </modules>
   </component>
 </project>
