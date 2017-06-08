@@ -11,6 +11,8 @@
         android:padding="8dp"
         android:text="@string/item"
         android:layout_alignParentTop="true"
+        android:textSize="14sp"
+        android:textColor="#dcdee2"
         android:layout_toEndOf="@+id/list_item_check_box" />
 
     <android.support.v7.widget.AppCompatCheckBox
