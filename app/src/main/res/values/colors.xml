@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bcd4</color>
+    <color name="colorPrimaryDark">#0097a7</color>
+    <color name="colorAccent">#40c4ff</color>
+    <color name="background_material_light">#fafafa</color>
+    <color name="coffee">#52AED3</color>
+    <color name="sweet">#4A77B0</color>
+    <color name="food">#5A5387</color>
+    <color name="drink">#544268</color>
+
+</resources>

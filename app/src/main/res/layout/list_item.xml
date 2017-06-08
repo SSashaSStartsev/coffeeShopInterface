@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp">
+    <TextView
+        android:id="@+id/checkable_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/item"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/list_item_check_box" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:buttonTint="#700333"
+        android:alpha="0.5"
+        android:id="@+id/list_item_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkable_list_item"
+        android:layout_alignBottom="@+id/checkable_list_item"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

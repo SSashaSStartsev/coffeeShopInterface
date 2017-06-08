@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShopifyInterviewApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="expansion_button">expansion button</string>
+    <string name="item">Item</string>
+    <string name="total_0">Total: %d</string>
+</resources>

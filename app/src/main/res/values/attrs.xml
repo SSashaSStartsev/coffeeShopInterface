@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContentAdapter">
+        <attr name="title" format="string" localization="suggested" />
+        <attr name="subtitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ChackableItem">
+        <attr name="item" format="string" localization="suggested" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+
+</resources>
+

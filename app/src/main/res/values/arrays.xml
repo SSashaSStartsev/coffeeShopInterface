@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="coffee_items">
+        <item>Latte</item>
+        <item>Mocha</item>
+        <item>Espresso</item>
+        <item>Coffee</item>
+    </string-array>
+    <string-array name="sweet_items">
+        <item>Cake</item>
+        <item>Torte</item>
+        <item>Pie</item>
+    </string-array>
+
+    <string-array name="food_items">
+        <item>Cheese</item>
+        <item>Steak</item>
+    </string-array>
+
+    <string-array name="drink_items">
+        <item>Beer</item>
+        <item>Wine</item>
+    </string-array>
+</resources>

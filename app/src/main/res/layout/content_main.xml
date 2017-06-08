@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alexa.shopifyinterviewapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+        android:id="@+id/coffee"
+        layout="@layout/list_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:elevation="6dp"
+        android:background="@color/coffee"
+        app:title="Coffee"
+        app:subtitle="Grab and go!"/>
+
+    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+        android:id="@+id/sweet"
+        layout="@layout/list_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:elevation="4dp"
+        android:background="@color/sweet"
+        app:title="Sweets"
+        app:subtitle="Good for your teeth"/>
+
+    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+        android:id="@+id/food"
+        layout="@layout/list_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@color/food"
+        app:title="Food"
+        app:subtitle="Hungry?"/>
+
+
+    <com.example.alexa.shopifyinterviewapp.ContentAdapter
+        android:id="@+id/drink"
+        layout="@layout/list_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:elevation="0dp"
+        android:background="@color/drink"
+        app:title="Drink"
+        app:subtitle="Late date?"/>
+
+</LinearLayout>
