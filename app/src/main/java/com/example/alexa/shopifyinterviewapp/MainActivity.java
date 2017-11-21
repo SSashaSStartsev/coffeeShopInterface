@@ -22,20 +22,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         //Set up each item, easier to do it in xml than inject into the layout
-        ListHeader coffee = (ListHeader) findViewById(R.id.coffee);
+        ListHeader coffee = findViewById(R.id.coffee);
         setupView(getResources().getStringArray(R.array.coffee_items), coffee);
-        ListHeader sweet = (ListHeader) findViewById(R.id.sweet);
+        ListHeader sweet = findViewById(R.id.sweet);
         setupView(getResources().getStringArray(R.array.sweet_items), sweet);
-        ListHeader food = (ListHeader) findViewById(R.id.food);
+        ListHeader food = findViewById(R.id.food);
         setupView(getResources().getStringArray(R.array.food_items), food);
-        ListHeader drink = (ListHeader) findViewById(R.id.drink);
+        ListHeader drink = findViewById(R.id.drink);
         setupView(getResources().getStringArray(R.array.drink_items), drink);
 
-        totalCheckedTextView = (TextView) findViewById(R.id.totalCount);
+        totalCheckedTextView = findViewById(R.id.totalCount);
         totalCheckedTextView.setText(getResources().getString(R.string.total_0,checkedCount));
     }
 
@@ -68,5 +68,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

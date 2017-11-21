@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ShopifyInterviewApp.iml" filepath="$PROJECT_DIR$/ShopifyInterviewApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\alexa\Documents\GitHub\coffeeShopInterface\ShopifyInterviewApp.iml" filepath="C:\Users\alexa\Documents\GitHub\coffeeShopInterface\ShopifyInterviewApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/coffeeShopInterface.iml" filepath="$PROJECT_DIR$/coffeeShopInterface.iml" />
     </modules>
